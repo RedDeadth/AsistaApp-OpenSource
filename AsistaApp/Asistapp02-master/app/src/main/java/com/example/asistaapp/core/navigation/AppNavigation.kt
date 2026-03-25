@@ -8,6 +8,7 @@ import com.example.asistaapp.core.session.SessionManager
 import com.example.asistaapp.core.network.RetrofitProvider
 import com.example.asistaapp.data.repository.AuthRepositoryImpl
 import com.example.asistaapp.presentation.home.HomeScreen
+import com.example.asistaapp.presentation.location.LocationScreen
 import com.example.asistaapp.presentation.login.LoginScreen
 import com.example.asistaapp.presentation.register.RegisterScreen
 
@@ -58,6 +59,11 @@ fun AppNavigation(navController: NavHostController, sessionManager: SessionManag
                         popUpTo(0) { inclusive = true }
                     }
                 }
+            )
+        }
+        composable(Routes.LOCATION) {
+            LocationScreen(
+                onAttendanceSuccess = { navController.popBackStack() }
             )
         }
     }

@@ -88,6 +88,9 @@ dependencies {
     // Lottie Animations
     implementation("com.airbnb.android:lottie-compose:6.4.1")
 
+    // OpenStreetMap (free, no API key required)
+    implementation("org.osmdroid:osmdroid-android:6.1.18")
+
     // Google Maps & Location
     implementation("com.google.android.gms:play-services-location:21.3.0")
     implementation("com.google.maps.android:maps-compose:6.1.0")
