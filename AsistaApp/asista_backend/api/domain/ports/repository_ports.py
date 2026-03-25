@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Optional, List
-from myapp.domain.entities.entities import UserEntity, AttendanceEntity
+from api.domain.entities.entities import UserEntity, AttendanceEntity
 
 
 class UserRepositoryPort(ABC):

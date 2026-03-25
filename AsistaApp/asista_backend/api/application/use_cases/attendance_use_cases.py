@@ -1,8 +1,8 @@
 from datetime import date, time
 from typing import List, Dict, Any
 
-from myapp.domain.entities.entities import AttendanceEntity
-from myapp.domain.ports.repository_ports import AttendanceRepositoryPort, UserRepositoryPort
+from api.domain.entities.entities import AttendanceEntity
+from api.domain.ports.repository_ports import AttendanceRepositoryPort, UserRepositoryPort
 
 
 class RegisterAttendanceUseCase:

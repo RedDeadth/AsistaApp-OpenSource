@@ -2,10 +2,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
-from myapp.application.use_cases.auth_use_cases import RegisterUserUseCase, LoginUserUseCase
-from myapp.application.use_cases.attendance_use_cases import RegisterAttendanceUseCase, ListAttendanceUseCase
-from myapp.infrastructure.repositories.user_repository import UserRepository
-from myapp.infrastructure.repositories.attendance_repository import AttendanceRepository
+from api.application.use_cases.auth_use_cases import RegisterUserUseCase, LoginUserUseCase
+from api.application.use_cases.attendance_use_cases import RegisterAttendanceUseCase, ListAttendanceUseCase
+from api.infrastructure.repositories.user_repository import UserRepository
+from api.infrastructure.repositories.attendance_repository import AttendanceRepository
 
 
 def _build_user_repo():

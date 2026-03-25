@@ -1,5 +1,5 @@
 from django.urls import path
-from myapp.presentation.controllers.controllers import RegisterController, LoginController, AttendanceController
+from api.presentation.controllers.controllers import RegisterController, LoginController, AttendanceController
 
 urlpatterns = [
     path("users/register/", RegisterController.as_view(), name="register"),

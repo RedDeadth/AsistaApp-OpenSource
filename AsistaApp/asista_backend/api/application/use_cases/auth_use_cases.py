@@ -4,7 +4,7 @@ import os
 from datetime import datetime, timedelta
 from typing import Optional, Dict, Any
 
-from myapp.domain.ports.repository_ports import UserRepositoryPort
+from api.domain.ports.repository_ports import UserRepositoryPort
 
 
 class RegisterUserUseCase:
@@ -35,7 +35,7 @@ class LoginUserUseCase:
         if user is None:
             raise LookupError("User not found")
 
-        from myapp.infrastructure.repositories.user_repository import UserRepository
+        from api.infrastructure.repositories.user_repository import UserRepository
         raw_user = UserRepository._get_raw(username)
         if not check_password(password, raw_user.password):
             raise PermissionError("Invalid credentials")

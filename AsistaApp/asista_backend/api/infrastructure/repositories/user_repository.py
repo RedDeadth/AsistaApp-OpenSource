@@ -1,7 +1,7 @@
 from typing import Optional, List
-from myapp.domain.entities.entities import UserEntity
-from myapp.domain.ports.repository_ports import UserRepositoryPort
-from myapp.models import User
+from api.domain.entities.entities import UserEntity
+from api.domain.ports.repository_ports import UserRepositoryPort
+from api.models import User
 
 
 class UserRepository(UserRepositoryPort):

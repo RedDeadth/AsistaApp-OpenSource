@@ -1,8 +1,8 @@
 from typing import List
 from django.utils import timezone
-from myapp.domain.entities.entities import AttendanceEntity
-from myapp.domain.ports.repository_ports import AttendanceRepositoryPort
-from myapp.models import Attendance, User
+from api.domain.entities.entities import AttendanceEntity
+from api.domain.ports.repository_ports import AttendanceRepositoryPort
+from api.models import Attendance, User
 
 
 class AttendanceRepository(AttendanceRepositoryPort):
