@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 ('fecha_registro', models.DateField()),
                 ('hora_registro', models.TimeField()),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('username', models.ForeignKey(db_column='username', on_delete=django.db.models.deletion.CASCADE, to='myapp.user', to_field='username')),
+                ('username', models.ForeignKey(db_column='username', on_delete=django.db.models.deletion.CASCADE, to='api.user', to_field='username')),
             ],
             options={
                 'db_table': 'attendance',
