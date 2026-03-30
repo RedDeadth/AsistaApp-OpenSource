@@ -3,7 +3,6 @@ import pymysql
 pymysql.version_info = (2, 2, 1, "final", 0)
 pymysql.install_as_MySQLdb()
 
-# Bypass MariaDB version check and RETURNING syntax for local XAMPP (10.4)
 try:
     from django.db.backends.base.base import BaseDatabaseWrapper
     BaseDatabaseWrapper.check_database_version_supported = lambda self: None
