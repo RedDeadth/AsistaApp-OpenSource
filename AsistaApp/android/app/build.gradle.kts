@@ -1,7 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -90,10 +89,9 @@ dependencies {
 
     // OpenStreetMap (free, no API key required)
     implementation("org.osmdroid:osmdroid-android:6.1.18")
-
-    // Google Maps & Location
+    
+    // GPS Location Services
     implementation("com.google.android.gms:play-services-location:21.3.0")
-    implementation("com.google.maps.android:maps-compose:6.1.0")
 
     // CameraX
     val cameraxVersion = "1.3.4"

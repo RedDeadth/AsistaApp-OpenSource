@@ -4,7 +4,3 @@
 
 # Backend API base URL
 BASE_URL=http://YOUR_SERVER_IP:8000/api/
-
-# Google Maps API Key
-# Get yours at https://console.cloud.google.com/ > Maps SDK for Android
-MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY_HERE
